@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style/badge.css">
+    <script src="https://use.fontawesome.com/b500caf73f.js"></script>
+    <title>Badges</title>
+</head>
+
+<body>
+    <div class="badge-main-container">
+        <!-- 1st badge -->
+        <div class="badge-container">
+            <div class="badge-container-text posi__rel">Visual Studio Code is awesome
+                <span class="badge posi__abs badge-one-position">1</span>
+            </div>
+        </div>
+        <!-- 2nd badge -->
+        <div class="badge-container ">
+            <div class="badge-container-text">Badge on button</div>
+            <button class="badge-btn posi__rel" type="submit">Action
+                <span class="badge posi__abs badge-two-position">2</span>
+            </button>
+        </div>
+        <!-- 3rd badge -->
+        <div class="badge-container ">
+            <div class="badge-container-text">Badge on left side of button</div>
+            <button class="badge-btn posi__rel" type="submit">Action
+                <span class="badge posi__abs badge-three-position">3</span>
+            </button>
+        </div>
+        <!-- 4th badge -->
+        <div class="badge-container ">
+            <div class="badge-container-text">badge will get disappear after clicking</div>
+            <button class="badge-btn posi__rel" type="submit" onclick="hideBadge()">Action
+                <span class="badge posi__abs badge-four-position" id="badge-hide">4</span>
+            </button>
+        </div>
+        <!-- 5th badge -->
+        <div class="badge-container ">
+            <div class="badge-container-text">Badge on left side of button</div>
+            <a class="badge-icon posi__rel" type="submit"><i class="fa fa-home" aria-hidden="true"></i>
+                <span class="badge posi__abs badge-five-position">5</span>
+            </a>
+        </div>
+    </div>
+    <script>
+
+        // javascript for forth button to hide
+        const badge = document.querySelector("#badge-hide")
+        function hideBadge(){
+            if(badge.style.visibility !== "hidden"){
+                badge.style.visibility = "hidden"
+            }
+            else{
+                badge.style.visibility = "visible"
+            }
+        }
+    </script>
+</body>
+
+</html>
