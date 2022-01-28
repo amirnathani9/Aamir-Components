@@ -34,7 +34,8 @@ body{
     border: 0;
     border-bottom: 2px solid transparent;
     cursor: pointer;
-    min-width:15rem;
+    /* min-width:15rem; */
+    white-space: nowrap;
     width: 40rem;
     /* height: 20rem; */
 }
